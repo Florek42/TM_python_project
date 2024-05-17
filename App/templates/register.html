@@ -8,35 +8,39 @@
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;600&display=swap" rel="stylesheet">
    
    <style>
-        @import url("../static/css/style.css");
+        @import url("../static/css/main.css");
    </style>
     
 </head>
     <body>
 
-        <div class="burger">
-            <h1>---</h1>
-        </div>
+        <nav role="navigation">
+            <div id="menuToggle">
+              <input type="checkbox"/>
+              <span></span>
+              <span></span>
+              <span></span>
+          
+              <ul id="menu">
+                    <a href="/home"><li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg>
+                        Home
+                    </li></a>
+                    <a href="/login"><li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M464 256A208 208 0 1 0 48 256a208 208 0 1 0 416 0zM0 256a256 256 0 1 1 512 0A256 256 0 1 1 0 256z"/></svg>
+                        Login
+                    </li></a>
+                    <a href="/register"><li>
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--!Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2024 Fonticons, Inc.--><path d="M256 512A256 256 0 1 0 256 0a256 256 0 1 0 0 512z"/></svg>
+                        Register
+                    </li></a>
 
-        <div class="background">
-            <div class="shape"></div>
-            <div class="shape"></div>
-        </div>
 
-        <form>
-            <h3>Sign Up</h3>
-
-            <label for="username">Username</label>
-            <input type="text" placeholder="Email or Phone" id="username">
-
-            <label for="password">Password</label>
-            <input type="password" placeholder="Password" id="password">
-
-            <button>Sign Up</button>
-            <div class="social">
-            <div class="go"><i class="fab fa-google"></i>  Google</div>
-            <div class="fb"><i class="fab fa-facebook"></i>  Facebook</div>
+              </ul>
             </div>
-        </form>
+          </nav>
+
+
+       
     </body>
 </html>

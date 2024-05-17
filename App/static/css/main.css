@@ -103,3 +103,8 @@ body{
 #menuToggle input:checked ~ ul{
   transform: none;
 }
+
+svg{
+    width: 15px;
+    height: 15px;
+}
