@@ -1,5 +1,4 @@
-body
-{
+body{
   margin: 0;
   padding: 0;
   background: #232323;
@@ -7,8 +6,7 @@ body
   font-family: "Avenir Next", "Avenir", sans-serif;
 }
 
-#menuToggle
-{
+#menuToggle{
   display: block;
   position: relative;
   top: 50px;
@@ -20,22 +18,19 @@ body
   user-select: none;
 }
 
-#menuToggle a
-{
+#menuToggle a{
   text-decoration: none;
   color: #232323;
   
   transition: color 0.3s ease;
 }
 
-#menuToggle a:hover
-{
+#menuToggle a:hover{
   color: tomato;
 }
 
 
-#menuToggle input
-{
+#menuToggle input{
   display: block;
   width: 40px;
   height: 32px;
@@ -48,8 +43,7 @@ body
   -webkit-touch-callout: none;
 }
 
-#menuToggle span
-{
+#menuToggle span{
   display: block;
   width: 33px;
   height: 4px;
@@ -64,13 +58,11 @@ body
               opacity 0.55s ease;
 }
 
-#menuToggle span:first-child
-{
+#menuToggle span:first-child{
   transform-origin: 0% 0%;
 }
 
-#menuToggle span:nth-last-child(2)
-{
+#menuToggle span:nth-last-child(2){
   transform-origin: 0% 100%;
 }
 
@@ -85,47 +77,29 @@ body
   transform: rotate(0deg) scale(0.2, 0.2);
 }
 
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
+#menuToggle input:checked ~ span:nth-last-child(2){
   transform: rotate(-45deg) translate(0, -1px);
 }
 
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
+#menu{
   position: absolute;
   width: 300px;
   margin: -100px 0 0 -50px;
   padding: 50px;
   padding-top: 125px;
-  
   background: #ededed;
   list-style-type: none;
   -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
   transform-origin: 0% 0%;
   transform: translate(-100%, 0);
-  
   transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
 }
 
-#menu li
-{
+#menu li{
   padding: 10px 0;
   font-size: 22px;
 }
 
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
+#menuToggle input:checked ~ ul{
   transform: none;
 }
